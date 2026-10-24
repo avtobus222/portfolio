@@ -1,0 +1,12 @@
+/* Переменные цвета и шрифтов, сброс стилей, фон */
+
+:root{--bg:#120e1a;--acc:#b8a0ff;--acc2:#6d4bd1;--cy:#6ee7c8;--mut:#a99fbb;--card:#ffffff0a;--s1:#1c1627;--s2:#2a2139;--line:#ffffff1a;--tx:#f2ecf7;--mu:#a99fbb;--pk:#ff7ab8;--a:#ff7ab8;--r:26px;
+--d:'Geologica',system-ui,sans-serif;--b:'Onest',system-ui,sans-serif;--e:cubic-bezier(.2,.8,.2,1)}
+*{box-sizing:border-box;margin:0}
+html,body{height:100%;overflow:hidden;background:var(--bg)}
+body{color:var(--tx);font:400 17px/1.6 var(--b);-webkit-font-smoothing:antialiased}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{font-family:var(--d);letter-spacing:-.025em;line-height:1.02}
+:focus-visible{outline:2px solid var(--a);outline-offset:3px}
+mark{background:none;color:var(--tx);box-shadow:inset 0 -.4em 0 #ff7ab838}
+.bg{position:fixed;inset:0;pointer-events:none;background:radial-gradient(60vmax 50vmax at 95% -10%,#6d4bd13d,transparent),radial-gradient(50vmax 40vmax at -10% 105%,#ff7ab824,transparent),radial-gradient(420px circle at var(--x,70%) var(--y,40%),color-mix(in srgb,var(--a) 22%,transparent),transparent 70%);transition:background .3s}

@@ -1,0 +1,18 @@
+/* Страница «Обо мне» */
+
+/* about */
+.prof{display:grid;grid-template-columns:300px 1fr;gap:40px;margin-top:30px;align-items:start}
+.pcd{padding:28px;border:1px solid var(--line);border-radius:22px;background:var(--card);text-align:center;position:sticky;top:80px}
+.ring{width:160px;height:160px;border-radius:50%;margin:0 auto 16px;padding:3px;background:conic-gradient(from var(--a),var(--pk),var(--acc),var(--cy),transparent 60%,var(--pk));animation:spin 4s linear infinite;box-shadow:0 0 50px color-mix(in srgb,var(--pk) 35%,transparent)}
+@keyframes spin{to{--a:360deg}}
+.av{width:100%;height:100%;border-radius:50%;background:#150e2e center/cover;display:flex;align-items:center;justify-content:center;font:900 42px Geologica;color:var(--pk)}
+.stp{display:inline-flex;gap:8px;align-items:center;margin:10px 0;padding:5px 14px;border:1px solid var(--line);border-radius:20px;font-size:12px;color:var(--mut)}.stp i{width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 10px #22c55e;animation:bl 1.5s infinite}
+.facts{list-style:none;padding:0;margin:14px 0 20px;text-align:left;font-size:14px}.facts li{display:flex;justify-content:space-between;gap:10px;padding:9px 0;border-top:1px solid var(--line)}.facts span{color:var(--mut)}.facts b{font-weight:500;text-align:right}
+.lead{font:700 clamp(19px,2.2vw,26px)/1.35 Geologica;margin:0 0 20px}
+.sub mark{background:none;color:#fff;border-bottom:2px solid var(--pk)}
+.rad svg{width:100%;max-width:400px;display:block}.rad polygon:last-of-type{transform-box:view-box;transform-origin:50% 50%;animation:pop 1.1s cubic-bezier(.2,.8,.2,1) both}
+@keyframes pop{from{transform:scale(0)}}
+.q{display:flex;gap:16px;padding:16px 18px;border:1px solid var(--line);border-radius:14px;background:var(--card);margin-bottom:12px}.q:hover{border-color:var(--pk)}
+.qi{font-size:22px;color:var(--pk)}.q b{color:var(--cy);font:12px Geologica;letter-spacing:2px}.q h4{font-size:16px;margin:4px 0 2px}.q em{color:var(--pk);font-style:normal;font-size:13px}.q p{margin:6px 0 0;color:var(--mut);font-size:14px}.q a{color:var(--cy);font-size:14px}
+.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.w{padding:22px;border:1px solid var(--line);border-radius:16px;background:var(--card);transition:.3s}.w:hover{transform:translateY(-6px);border-color:var(--pk)}.w .ic{font-size:30px}.w h4{font-size:15px;margin:8px 0}.w p{margin:0;color:var(--mut);font-size:14px}

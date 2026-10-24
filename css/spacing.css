@@ -1,0 +1,29 @@
+/* Отступы и воздух между блоками */
+
+/* ================= ВОЗДУХ ================= */
+.pg #lw{max-width:1240px!important;margin:0 auto!important;padding:130px 5vw 140px!important}
+#lw h3{font-size:clamp(24px,2.6vw,32px)!important;margin:120px 0 18px!important;letter-spacing:-.01em}
+#lw .lh+h3,#lw .lh+.cnt{margin-top:90px!important}
+#lw .sub{font-size:16px;line-height:1.75;max-width:640px}
+#lw h3+.sub{margin-bottom:34px;color:var(--mut);opacity:.85}
+.lh{padding:64px 56px!important;margin-bottom:10px}
+.lh .sub{max-width:520px}
+.skg,.cases,.why,.tools,.g,.cnt,.xpc,.mg{gap:28px!important}
+.sk,.cf,.w,.xc,.q{padding:30px!important}
+.sk h4,.cf h4,.w h4{margin:16px 0 8px}
+.sk p,.cf p,.w p{line-height:1.7;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.sk .chips,.cf .chips{gap:8px}
+.q{margin-bottom:22px}
+.dual{margin-top:110px!important;gap:56px!important}
+.pts li{padding:14px 0 14px 28px!important}
+.crumb{margin-bottom:44px!important}
+.nextb{margin-top:130px!important}
+.arc{margin-top:8px}
+.show{margin-top:8px;gap:28px!important}
+.info3{padding:34px!important}
+.fold{max-height:0;overflow:hidden;transition:max-height .7s var(--e),opacity .5s;opacity:0}.fold.open{max-height:1200px;opacity:1}
+#foldb{margin-top:16px}
+.xc .pts{max-height:0;overflow:hidden;margin:0!important;transition:max-height .6s var(--e)}.xc.open .pts{max-height:500px;margin-top:14px!important}
+.xc .xm{display:inline-block;margin-top:14px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--cy)}
+.xc.open .xm{opacity:.4}
+.sk .si{transition:transform .5s var(--e)}.sk:hover .si{transform:translateY(-4px) scale(1.08) rotate(-4deg)}

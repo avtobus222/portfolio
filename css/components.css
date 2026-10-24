@@ -1,0 +1,37 @@
+/* Общие элементы: кнопки, теги, счётчики, заглушка-куб, фильтры */
+
+.btn.main{background:var(--a);color:#1a1224;border-color:var(--a)}.btn.main:hover{box-shadow:0 14px 44px color-mix(in srgb,var(--a) 55%,transparent);transform:translateY(-2px)}
+.btn.sm{padding:8px 16px;font-size:13.5px}
+.chip{font-size:11.5px;padding:3px 12px;border-radius:20px;border:1px solid var(--line);color:var(--pk);display:inline-block}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.wip{margin-left:8px;font:700 10px var(--d);letter-spacing:2px;color:var(--pk);animation:bl 1.4s infinite}@keyframes bl{50%{opacity:.2}}
+.grad{background:linear-gradient(100deg,var(--acc),var(--pk),var(--cy));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hst{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin-top:28px;max-width:600px}
+.hst div{padding-left:14px;border-left:2px solid color-mix(in srgb,var(--a) 60%,transparent);transition:border-color .6s}.hst b{display:block;font:700 19px var(--d)}.hst small{display:block;color:var(--mu);font-size:12.5px;line-height:1.35;margin-top:3px}
+.hch{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;max-width:560px}.hch span{padding:6px 14px;border-radius:99px;border:1px solid var(--line);font-size:13.5px;color:var(--mu);cursor:pointer;transition:.3s}.hch span:hover{color:#fff;border-color:var(--a)}
+@media(max-width:600px){.hst{grid-template-columns:1fr 1fr}}
+.pg{--card:#ffffff0a}
+.pg #lw{max-width:none;margin:0;padding:120px 4vw 90px}
+.nextb{margin-top:60px;text-align:center}
+.hintp{display:inline-flex;gap:8px;padding:6px 14px;border-radius:30px;border:1px dashed var(--pk);color:var(--pk);font-size:13px;margin:16px 0 4px}
+#lw{max-width:none;margin:0;padding:120px 4vw 90px}
+#lw h2{font-size:clamp(26px,4vw,44px);margin-bottom:8px}#lw h2 small{display:block;font-size:12px;color:var(--cy);letter-spacing:5px;margin-bottom:6px}
+#lw h3{font-size:19px;margin:48px 0 14px;color:var(--pk)}
+.sub{color:var(--mut);max-width:1100px;font-size:16px}
+.rv{animation:up .6s cubic-bezier(.22,1,.36,1) both}
+@keyframes up{from{opacity:0;transform:translateY(12px)}}
+.g{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;margin-top:24px}
+.cb{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:border-color .25s,box-shadow .25s,transform .25s;cursor:pointer}
+.cb:hover{border-color:var(--pk);box-shadow:0 14px 44px color-mix(in srgb,var(--acc2) 40%,transparent);transform:translateY(-6px)}
+.cb .v{height:230px;position:relative;background:radial-gradient(circle at 50% 40%,color-mix(in srgb,var(--acc2) 55%,#0a0618),#0a0618 75%)}
+.cb .v img{width:100%;height:100%;object-fit:cover}.cb .v model-viewer{width:100%;height:100%;--poster-color:transparent;background:none}
+.th{display:flex;align-items:center;justify-content:center;font-size:64px}
+.inf{padding:16px 18px}.inf h4{font-size:16px;margin-bottom:6px}.inf p{margin:0;color:var(--mut);font-size:14px}.more{display:block;margin-top:12px;color:var(--cy);font-size:13px}
+.cl{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.empty{position:absolute;inset:0;display:flex;flex-direction:column;gap:14px;align-items:center;justify-content:center;color:var(--mut);font-size:12px;text-align:center}
+.cube{width:54px;height:54px;position:relative;transform-style:preserve-3d;animation:rot 8s linear infinite}.cube i{position:absolute;inset:0;border:1.5px solid var(--pk);box-shadow:0 0 12px color-mix(in srgb,var(--pk) 45%,transparent)}
+.cube i:nth-child(1){transform:translateZ(27px)}.cube i:nth-child(2){transform:rotateY(180deg) translateZ(27px)}.cube i:nth-child(3){transform:rotateY(90deg) translateZ(27px)}.cube i:nth-child(4){transform:rotateY(-90deg) translateZ(27px)}.cube i:nth-child(5){transform:rotateX(90deg) translateZ(27px)}.cube i:nth-child(6){transform:rotateX(-90deg) translateZ(27px)}
+.wc{perspective:400px}@keyframes rot{to{transform:rotateX(360deg) rotateY(360deg)}}
+.feat{width:100%;height:360px;margin-top:24px;border:1px solid var(--line);border-radius:18px;background:radial-gradient(circle at 50% 45%,color-mix(in srgb,var(--acc2) 55%,#0a0618),#0a0618 75%);--poster-color:transparent}
+.flt{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+.f{padding:8px 18px;border-radius:30px;border:1px solid var(--line);background:none;color:var(--mut);cursor:pointer;transition:.2s}.f.on,.f:hover{color:#fff;border-color:var(--pk);background:color-mix(in srgb,var(--pk) 14%,transparent)}

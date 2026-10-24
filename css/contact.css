@@ -1,0 +1,6 @@
+/* Страница «Контакты» и терминал */
+
+/* contact */
+.links{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px}
+.term{margin-top:14px;border:1px solid var(--line);border-radius:14px;background:#07040f;padding:16px;font:14px/1.6 Consolas,monospace;color:#d7c8ff}
+#to{white-space:pre-wrap;max-height:240px;overflow:auto;margin-bottom:8px}.tin{display:flex;gap:8px}.tin span{color:var(--pk);white-space:nowrap}#ti{flex:1;min-width:0;background:none;border:0;outline:0;color:#fff;font:inherit}

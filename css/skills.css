@@ -1,0 +1,17 @@
+/* Умения, инструменты, опыт, блок связи */
+
+/* abilities / tools / experience / cta */
+.skg{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;margin-top:18px}
+.sk{position:relative;padding:22px 22px 20px;border:1px solid var(--line);border-radius:18px;background:radial-gradient(240px circle at var(--mx,50%) var(--my,-60%),color-mix(in srgb,var(--pk) 13%,transparent),transparent 70%),var(--card);transition:transform .3s,border-color .3s,box-shadow .3s}
+.sk:hover{transform:translateY(-5px);border-color:var(--pk);box-shadow:0 16px 44px color-mix(in srgb,var(--acc2) 38%,transparent)}
+.sk .si{font-size:26px;width:48px;height:48px;border-radius:14px;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle,color-mix(in srgb,var(--pk) 22%,transparent),transparent 72%);border:1px solid var(--line)}
+.sk h4{font-size:16px;margin:14px 0 6px}.sk p{margin:0;color:var(--mut);font-size:14px}.sk .chips{margin-top:12px}
+.sk .go{display:inline-block;margin-top:12px;color:var(--cy);font-size:13px;background:none;border:0;padding:0;cursor:pointer}.sk .go:hover{color:#fff}
+.tools{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-top:16px}
+.tl{padding:16px 18px;border:1px solid var(--line);border-radius:14px;background:var(--card);transition:.25s}.tl:hover{border-color:var(--pk)}.tl b{display:block;font:700 14px Geologica,sans-serif;color:#fff}.tl span{display:block;margin-top:5px;color:var(--mut);font-size:13px}
+.xpc{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:18px;margin-top:16px}
+.xc{padding:26px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(150deg,color-mix(in srgb,var(--acc2) 22%,transparent),transparent 60%),var(--card)}
+.xc .ky{color:var(--cy);font:600 11px Geologica,sans-serif;letter-spacing:3px}.xc h4{font-size:19px;margin:10px 0 4px}.xc em{color:var(--pk);font-style:normal;font-size:13px}.xc .pts{margin-top:14px}
+.cta{margin-top:70px;padding:32px 38px;border-radius:26px;border:1px solid var(--pk);background:linear-gradient(120deg,color-mix(in srgb,var(--pk) 16%,transparent),color-mix(in srgb,var(--acc2) 28%,transparent));display:flex;gap:24px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+#lw .cta h3{margin:0;color:#fff;font-size:21px}.cta p{margin:8px 0 0;color:#d9cff7;max-width:560px}
+.sdet small{display:block;margin-top:10px;color:var(--cy);font-size:13px}

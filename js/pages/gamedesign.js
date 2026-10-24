@@ -1,0 +1,14 @@
+/* Страница «Геймдизайн»: кейсы, процесс, кривая ценности, симулятор */
+
+L.gd=()=>lh(4,"ГЕЙМДИЗАЙН","Геймдизайн","Кейсы, интерактивный график и симулятор: всё, что я придумала, проанализировала и разобрала.","gd")+`
+<div class="cnt rv">${[[GD.length,"кейсов"],[6,"игр в анализе рынка"],[12,"эмоций игрока разобрано"],[10,"ценностей на кривой"]].map(([n,t])=>`<div><b data-n="${n}">0</b><small>${t}</small></div>`).join("")}</div>
+`+secSk("gd")+secXp()+secTools("gd")+`
+<h3>Мой процесс</h3><p class="sub">Нажми на этап, чтобы узнать, что я на нём делаю.</p>`+stepper("steps",PROC)+`
+<h3>Кейсы</h3><div class="hintp">👆 Нажми на карточку, чтобы открыть кейс</div>
+<div class="cases">${GD.map((c,i)=>`<div class="cf rv" data-i="${i}"><span class="cn">КЕЙС ${String(i+1).padStart(2,"0")}</span>${c.wip?'<span class="wip">● В РАБОТЕ</span>':""}<h4>${c.title}</h4><span class="chip" style="color:var(--cy)">${c.type}</span><p>${c.desc}</p><div class="chips">${tg(c.tags)}</div><span class="more">Открыть кейс →</span></div>`).join("")}</div>
+<div class="dual" id="vcsec"><div><h3>Кривая ценности</h3><p class="sub">Из моего анализа рынка стелс-хоррора: шесть игр и десять ценностей.</p><ul class="pts"><li>Перенасыщено: атмосфера, беспомощность, сюжет и графика.</li><li>Точки роста: честный адаптивный ИИ и реиграбельность одиночной игры.</li><li>Включай и выключай игры, наводи на название, чтобы выделить линию.</li></ul></div><div class="vc" style="margin:0"><div class="leg" id="leg"></div><div id="vc"></div></div></div>
+<div class="dual"><div><h3>Симулятор выживания</h3><p class="sub">Модель из моей деконструкции The Forest.</p><ul class="pts"><li>Четыре шкалы тратятся сами: сытость, жажда, энергия, тепло.</li><li>Любая шкала на нуле снимает здоровье.</li><li>Костёр греет, но привлекает каннибалов.</li><li>Продержись 30 секунд!</li></ul></div><div class="sim" style="margin:0"><div class="sb" data-k="food"><span>🍖 Сытость</span><i><b></b></i></div><div class="sb" data-k="water"><span>💧 Жажда</span><i><b></b></i></div><div class="sb" data-k="energy"><span>⚡ Энергия</span><i><b></b></i></div><div class="sb" data-k="warm"><span>🔥 Тепло</span><i><b></b></i></div><div class="sb hp" data-k="hp"><span>❤ Здоровье</span><i><b></b></i></div><div class="sa"><button class="btn sm" data-a="eat">🍖 Поесть</button><button class="btn sm" data-a="drink">💧 Попить</button><button class="btn sm" data-a="sleep">🛏 Поспать</button><button class="btn sm" data-a="fire">🔥 Костёр</button></div><div id="slog">Нажми любую кнопку, чтобы начать выживать.</div><div id="stime">0 c</div></div></div>`+cta("gd");
+
+INIT.gd=()=>{$$("#lw .cf").forEach(c=>c.onclick=()=>openCase(GD[+c.dataset.i]));vcInit();sim();
+ $$("#lw .cnt b").forEach(b=>{const n=+b.dataset.n;let i=0;const t=setInterval(()=>{i++;b.textContent=i;if(i>=n)clearInterval(t)},Math.max(40,1000/n))});
+ stepInit("steps",PROC)};

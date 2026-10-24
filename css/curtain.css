@@ -1,0 +1,11 @@
+/* Переход между разделами (занавес) */
+
+/* ================= ПЕРЕХОД-ЗАНАВЕС ================= */
+#cur{position:fixed;inset:0;z-index:200;pointer-events:all;overflow:hidden}
+#cur .cs{position:absolute;top:0;bottom:0;transform:scaleY(0);transform-origin:bottom;background:linear-gradient(180deg,#0d0820 0%,color-mix(in srgb,var(--cc) 20%,#07040f) 100%);box-shadow:inset 0 2px 0 color-mix(in srgb,var(--cc) 80%,transparent)}
+#cur .cl2{position:absolute;inset:0;background:radial-gradient(40vmax 22vmax at 50% 50%,color-mix(in srgb,var(--cc) 22%,transparent),transparent 70%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;opacity:0;pointer-events:none}
+#cur .cn2{font:600 13px Geologica,sans-serif;letter-spacing:.5em;color:var(--cc);min-height:16px;padding-left:.5em}
+#cur .ct2{overflow:hidden;padding:.06em .2em}
+#cur .ct2 span{display:block;font:900 clamp(44px,9vw,128px)/1.05 Geologica,sans-serif;color:#fff;letter-spacing:-.02em}
+#cur .cbar{display:block;width:min(240px,50vw);height:2px;background:var(--cc);transform:scaleX(0);transform-origin:left;box-shadow:0 0 18px var(--cc)}
+@media(prefers-reduced-motion:reduce){*,*::before{animation:none!important;transition:none!important}}

@@ -1,0 +1,14 @@
+/* Появление блоков при прокрутке, подсветка и наклон карточек */
+
+/* появление при прокрутке */
+.pg .rv{animation:none!important;opacity:0}
+.pg .rv.in{animation:up .9s cubic-bezier(.22,1,.36,1) both!important;opacity:1}
+@keyframes up{from{opacity:0;transform:translateY(34px)}}
+/* подсветка и наклон */
+.tilt{position:relative;transition:transform .4s var(--e),border-color .3s,box-shadow .35s,background .3s;will-change:transform}
+.tilt .spot{position:absolute;inset:0;border-radius:inherit;pointer-events:none;opacity:0;transition:opacity .35s;z-index:2;background:radial-gradient(380px circle at var(--mx,50%) var(--my,50%),color-mix(in srgb,var(--acc) 22%,transparent),transparent 62%)}
+.tilt:hover .spot{opacity:1}
+.tilt:hover{box-shadow:0 24px 60px -24px color-mix(in srgb,var(--acc) 55%,transparent);border-color:color-mix(in srgb,var(--acc) 55%,transparent)}
+.btn.main{transition:transform .25s var(--e),box-shadow .3s,background .3s}
+.pbar{position:fixed;left:0;right:0;top:0;height:3px;z-index:5;pointer-events:none}.pbar i{display:block;height:100%;transform:scaleX(0);transform-origin:left;background:linear-gradient(90deg,var(--acc),#fff)}
+.bign,.deco{will-change:transform}
