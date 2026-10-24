@@ -3,7 +3,7 @@
 const PROJECTS = [
   // 3D: карточка появляется на сайте, когда прописан model:"models/файл.glb"
   // { title:"Название", desc:"Описание", model:"models/file.glb", cat:"3D", tags:["3ds Max"] },
-  { title:"3D-модель 1", desc:"Что за объект, в каком стиле, какие текстуры.", model:"models/mel.glb", cat:"3D", tags:["3ds Max"] },
+  { title:"3D-модель 1", desc:"Что за объект, в камаывмы мам кпмсукп укемуксукпукесмукмсукепукпесукеукпуеппукепукесукмсаком стиле, какие текстуры.", model:"models/mel.glb", cat:"3D", tags:["3ds Max"] },
   { title:"3D-модель 2", desc:"Что за объект, в каком стиле, какие текстуры.", model:"models/kn.glb", cat:"3D", tags:["3ds Max"] },
   { title:"3D-модель 3", desc:"Что за объект, в каком стиле, какие текстуры.", model:"models/krr.glb", cat:"3D", tags:["3ds Max"] },
   { title:"3D-модель 4", desc:"Что за объект, в каком стиле, какие текстуры.", model:"", cat:"3D", tags:["3ds Max"] },
