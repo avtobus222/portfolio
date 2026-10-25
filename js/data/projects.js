@@ -8,6 +8,8 @@ const PROJECTS = [
   { title:"3D-модель 3", desc:"Что за объект, в каком стиле, какие текстуры.", model:"models/kkk.glb", cat:"3D", tags:["3ds Max"] },
   { title:"3D-модель 4", desc:"Чтfvvdsfvsd за объект, в каком стиле, какие текстуры.", model:"models/ggg.glb", cat:"3D", tags:["3ds Max"] },
   { title:"3D-модель 5", desc:"Что за объект, в каком стиле, какие текстуры.", model:"models/nnnnn.glb", cat:"3D", tags:["3ds Max"] },
+  { title:"3D-модель 6", desc:"Чтfvvdsfvsd за объект, в каком стиле, какие текстуры.", model:"models/uuu.glb", cat:"3D", tags:["3ds Max"] },
+  { title:"3D-модель 7", desc:"Что за объект, в каком стиле, какие текстуры.", model:"models/zzz.glb", cat:"3D", tags:["3ds Max"] },
   { title:"3D-модель 6", desc:"Что за объект, в каком стиле, какие текстуры.", model:"", cat:"3D", tags:["3ds Max"] },
   // 2D: экраны интерфейса хоррор-игры (курс «Двумерная визуализация», Photoshop)
   { title:"Стартовое окно", desc:"Настроила яркость, тон и экспозицию фона, добавила кнопки запуска игры.", img:"images/ui-start.jpg", model:"", cat:"2D", tags:["Photoshop","UI"] },
