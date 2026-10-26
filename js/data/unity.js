@@ -12,7 +12,7 @@ const UW=UNITY_WORKS.filter(w=>w.img||w.video||w.youtube);
 const YT=u=>{const m=(u||"").match(/(?:youtu\.be\/|v=|embed\/)([\w-]{11})/);return m?m[1]:""};
 const UNITY = [
   // { title:"Игра", desc:"Описание", img:"images/game.jpg", tags:["Unity"], links:[["Играть","https://..."],["GitHub","https://..."]] },
-  { title:"Лабиринт", desc:"Учебный проект по предмету «Двумерная визуализация»: игра-лабиринт, собранная в Unity.", img:"", tags:["Unity","2D","Учебный проект"], links:[] },
-  { title:"Пинг-понг", desc:"Классическая аркада в Unity: ракетки, мяч и счёт.", img:"", tags:["Unity","2D","Учебный проект"], links:[] },
-  { title:"Карточки-запоминашки", desc:"Мемори: переворачиваешь карточки и ищешь пары.", img:"", tags:["Unity","2D","Учебный проект"], links:[] }
+  { title:"Лабиринт", desc:"Учебный проект по предмету «Двумерная визуализация»: игра-лабиринт, собранная в Unity.", img:"images/lab.jpg", tags:["Unity","2D","Учебный проект"], links:[] },
+  { title:"Пинг-понг", desc:"Классическая аркада в Unity: ракетки, мяч и счёт.", img:"images/pon.jpg", tags:["Unity","2D","Учебный проект"], links:[] },
+  { title:"Карточки-запоминашки", desc:"Мемори: переворачиваешь карточки и ищешь пары.", img:"images/memo.jpg", tags:["Unity","2D","Учебный проект"], links:[] }
 ];
