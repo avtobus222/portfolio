@@ -17,7 +17,7 @@
 .cb{display:flex;flex-direction:column;height:100%}.cb .inf{flex:1;display:flex;flex-direction:column}.cb .inf .chips{margin-top:auto;padding-top:12px}
 .cb .v{height:230px;flex:none}
 .dual,.arc{align-items:stretch}.dual>*,.arc>*{min-width:0}
-.dual>.vc,.dual>.sim{height:100%;box-sizing:border-box}
+.dual>.vc{height:100%;box-sizing:border-box}
 .show{grid-template-columns:minmax(0,1.6fr) minmax(0,1fr)}
 .info3{box-sizing:border-box;height:100%}
 .thumbs .th3{width:150px;height:90px;display:flex;flex-direction:column;justify-content:center}
